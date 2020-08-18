@@ -1,0 +1,20 @@
+{% load votainteligente_extras %}
+Hola
+
+Te escribimos, para invitarlo a participar de http://nuestraeleccion.gt, plataforma que busca acercar a candidatas/os con la ciudadanía en estas próximas elecciones.
+
+http://Nuestraeleccion.gt es una plataforma, SIN COSTO ASOCIADO, que recibe propuestas ciudadanas y de la sociedad civil en el marco de las elecciones generales de este año.
+
+Cada candidatura cuenta con un perfil básico, al que puede acceder para difundir información sobre su campaña y comprometerse con aquellas propuestas ciudadanas que le sean afines.
+
+¿Cómo entrar al perfil?
+Solo debes ingresar a {{login_url}} con el siguiente usuario y contraseña (puedes modificarla ingresando en el sitio).
+
+**Tu usuario es: {{contact.candidacy.user.username}}
+**Tu contraseña es: {{contact.initial_password}}
+
+Si quieres que utilicemos otra dirección de correo electrónico para comunicarnos contigo o con otra persona de tu comando encargada de estos temas, puedes responder a este mismo mail con su contacto y cualquier otra duda que tengas.
+
+¡Súmate a NuestraEleccion!
+
+{% mail_signature_txt %}
