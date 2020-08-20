@@ -1,1 +1,1 @@
-[Nuestra Elección] Confirmación de cuenta {{message.subject}}
+[Gobierno Abierto] Confirmación de cuenta {{message.subject}}

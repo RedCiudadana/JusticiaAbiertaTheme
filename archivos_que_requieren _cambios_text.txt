@@ -1,0 +1,7 @@
+gobiernoabierto/templates/votita/que-es.html
+gobiernoabierto/templates/votita/lista_propuesta.html
+gobiernoabierto/templates/votita/index.html
+gobiernoabierto/templates/votita/_navbar.html
+gobiernoabierto/templates/mails/the_end/body.html
+gobiernoabierto/templates/meetup.html
+gobiernoabierto/templates/_navbar.html

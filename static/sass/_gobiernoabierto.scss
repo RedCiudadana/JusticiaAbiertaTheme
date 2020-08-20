@@ -1,9 +1,19 @@
-// Nuestra Elección 2019
+// Gobierno Abierto 2019
 @import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.btn-success {
+    background-color: $success;
+    border: 3px solid $success;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .navbar-inverse.red {
     color: white !important;
-    background-color: #eb665f;
+    background-color: $grey-one;
     border: unset !important;
 }
 
@@ -22,7 +32,19 @@
 }
 
 .badge {
-    background-color: #f8ae42;
+    background-color: $success;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.label-success {
+    background-color: $success;
+    color: white;
+    font-weight: bold;
 }
 
 /*RED CIUDADANA THEME*/
@@ -35,6 +57,32 @@
     background-color: red !important;
 }
 
+// RFC BOOTSTRAP 4
+
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
 /*Dont uppercase*/
 h1,
 h2,
@@ -44,6 +92,7 @@ h5,
 h6,
 .badge,
 label.control-label {
+    font-family: 'Montserrat', sans-serif;
     text-transform: none !important;
     letter-spacing: 0;
 }
@@ -69,7 +118,7 @@ label.control-label {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: $btn-success-background-color;
+    color: $success;
 }
 
 .navbar-nav {
@@ -98,8 +147,12 @@ label.control-label {
 }
 
 .btn-blue {
-    background-color: #f8ae42;
+    background-color: $yellow;
     color: white;
+}
+
+.btn-blue:hover {
+    color: white !important;
 }
 
 .btn-apoyo {
@@ -303,4 +356,67 @@ select.form-control,
     .material.videos h3 {
         text-align: left;
     }
+}
+
+#homepageslider {
+    width: 100%;
+    background-color: $grey-one;
+
+    // TODO: Alinear verticalmente
+    h1 {
+        text-align: center;
+        font-size: 4.5rem;
+        color: white;
+        margin-top: 4.5rem;
+    }
+
+    img {
+        text-align: center;
+        width: 100%;
+        max-width: 750px;
+    }
+}
+
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@media (min-width: $lg) {
+    #homepageslider {
+        h1 {
+            text-align: left;
+        }
+    }
+}
+
+.propuesta {
+    border: unset;
+    box-shadow: 8px 9px 11px -1px rgba(0,0,0,0.27);
+    background-color: white;
+}
+
+.container-light {
+    width: 100%;
+    background-color: $light;
+}
+
+.share-card {
+    border-radius: 0 0 10px 10px;
+}
+
+#highlighted-proposals {
+    padding: 0;
+}
+
+.padding-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.bajada {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dark {
+    background-color: $dark;
 }

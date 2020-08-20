@@ -1,10 +1,19 @@
 @charset "UTF-8";
 /* ==========================================================================
    Definición de los colores
-   ========================================================================== */
+   ==========================================================================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.btn-success {
+  background-color: #F38B00;
+  border: 3px solid #F38B00; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 .navbar-inverse.red {
   color: white !important;
-  background-color: #eb665f;
+  background-color: #2C3447;
   border: unset !important; }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -17,7 +26,18 @@
   color: white !important; }
 
 .badge {
-  background-color: #f8ae42; }
+  background-color: #F38B00;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 2px; }
+
+.label-success {
+  background-color: #F38B00;
+  color: white;
+  font-weight: bold; }
 
 /*RED CIUDADANA THEME*/
 .navbar-inverse {
@@ -25,6 +45,24 @@
 
 .navbar-inverse.white {
   background-color: red !important; }
+
+h1, .h1 {
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
 
 /*Dont uppercase*/
 h1,
@@ -35,6 +73,7 @@ h5,
 h6,
 .badge,
 label.control-label {
+  font-family: 'Montserrat', sans-serif;
   text-transform: none !important;
   letter-spacing: 0; }
 
@@ -54,7 +93,7 @@ label.control-label {
     margin-left: 0; }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #3ee0cb; }
+  color: #F38B00; }
 
 .navbar-nav {
   min-height: 80px; }
@@ -74,8 +113,11 @@ label.control-label {
   margin-top: -30px; }
 
 .btn-blue {
-  background-color: #f8ae42;
+  background-color: #F38B00;
   color: white; }
+
+.btn-blue:hover {
+  color: white !important; }
 
 .btn-apoyo {
   background-color: #eb665f !important;
@@ -230,3 +272,45 @@ select.form-control,
 @media (min-width: 768px) {
   .material.videos h3 {
     text-align: left; } }
+
+#homepageslider {
+  width: 100%;
+  background-color: #2C3447; }
+  #homepageslider h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    color: white;
+    margin-top: 4.5rem; }
+  #homepageslider img {
+    text-align: center;
+    width: 100%;
+    max-width: 750px; }
+
+@media (min-width: 1200px) {
+  #homepageslider h1 {
+    text-align: left; } }
+
+.propuesta {
+  border: unset;
+  box-shadow: 8px 9px 11px -1px rgba(0, 0, 0, 0.27);
+  background-color: white; }
+
+.container-light {
+  width: 100%;
+  background-color: #EDF1F7; }
+
+.share-card {
+  border-radius: 0 0 10px 10px; }
+
+#highlighted-proposals {
+  padding: 0; }
+
+.padding-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem; }
+
+.bajada {
+  font-family: 'Montserrat', sans-serif; }
+
+.dark {
+  background-color: #2C3447; }

@@ -27,10 +27,10 @@
                 onclick="ga('send', 'event', 'nav-logo-vota', 'click')"
             >
                 <img
-                    src="{% static 'img/logo.png' %}{% block navbar_logo %}{% endblock navbar_logo %}"
-                    title="Nuestra Elección"
-                    alt="Nuestra Elección"
-                    height="60"
+                    src="{% static 'img/LOGOTIPO_GA_02.png' %}{% block navbar_logo %}{% endblock navbar_logo %}"
+                    title="Gobierno Abierto"
+                    alt="Gobierno Abierto"
+                    height="40"
             /></a>
         </div>
         {% block navbar %} {% block extra_nav %} {% endblock extra_nav %}
@@ -41,40 +41,7 @@
         </style>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a
-                        href="{% url 'que_es' %}"
-                        onclick="ga('send', 'event', 'nav-que-es', 'click')"
-                        >{% trans "¿Qué es?" %}</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="{% url 'popular_proposals:home' %}"
-                        onclick="ga('send', 'event', 'nav-conoce-propuestas', 'click')"
-                    >
-                        {% trans "Propuestas ciudadanas" %}
-                    </a>
-                </li>
-                <li class="elecciones2019">
-                    <a
-                        href="{% url 'material_ciudadano' %}"
-                        onclick="ga('send', 'event', 'nav-compromisos-pinera', 'click')"
-                    >
-                        Elecciones 2019
-                        <br />
-                        <span>
-                            (¿Cómo funciona?)
-                        </span>
-                    </a>
-                </li>
                 {% include '_dropdown_user.html' %}
-                <!-- {% if user.is_authenticated %}
-                  <li><a href="{% url 'backend_citizen:update_my_profile' %}" class="btn btn-blue btn-login" onclick="ga('send', 'event', 'click')">{% trans "Mi perfil" %}</a></li>
-                  <li><a href="{% url 'auth_logout' %}" class="btn btn-blue btn-login" onclick="ga('send', 'event', 'click')">{% trans "Salir de sesión" %}</a></li>
-                {% else %}
-                  <li><a href="{% url 'username_and_password' %}" class="btn btn-blue btn-login" onclick="ga('send', 'event', 'click')">{% trans "Ingresa" %}</a></li>
-                {% endif %} -->
 
                 <li>
                     <a
@@ -91,7 +58,7 @@
                     <a
                         class="share-btn share-btn-branded share-btn-facebook"
                         onclick="ga('send', 'event', 'nav-facebook-share', 'click');"
-                        href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbeta.nuestraeleccion.gt"
+                        href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbeta.gobiernoabierto.gt"
                         title="{{ config.WEBSITE_METADATA_DESCRIPTION }}"
                         target="_blank"
                     >
