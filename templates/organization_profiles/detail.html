@@ -73,9 +73,9 @@
 <div id="difunde">
   <div id="btn-difunde" class="container text-center">
       <p>
-{% blocktrans with ayuranos=ayuranos %}
-Ayúdanos a difundir nuestras propuestas entre las candidaturas <a href="{{ayuranos}}" class="btn btn-blue" onclick="ga('send','event','ayudanos-org','click')">aquí</a>
-{% endblocktrans %}
+      {% blocktrans with ayuranos=ayuranos %}
+        Ayúdanos a difundir nuestras propuestas entre las candidaturas <a href="{{ayuranos}}" class="btn btn-blue" onclick="ga('send','event','ayudanos-org','click')">aquí</a>
+      {% endblocktrans %}
       </p>
 
   </div>
@@ -101,9 +101,9 @@ Ayúdanos a difundir nuestras propuestas entre las candidaturas <a href="{{ayura
       {% else %}
         {% if is_owner %}
         <p></p>
-{% blocktrans with var1 as var2 %}
-Comienza a generar tus propuestas en el siguiente <a href="{{create_proposal_url}}">enlace</a>
-{% endblocktrans %}
+        {% blocktrans with var1 as var2 %}
+          Comienza a generar tus propuestas en el siguiente <a href="{{create_proposal_url}}">enlace</a>
+        {% endblocktrans %}
 
         {% endif %}
       {% endif %}
