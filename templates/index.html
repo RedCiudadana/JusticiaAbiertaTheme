@@ -10,16 +10,11 @@
   <section id="homepageslider">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6">
-          <h1>
-            ¡Participa en el<br>
-            plan de acción!
+        <div class="col-12">
+          <h1 class="text-center" style="text-align: center; margin-bottom: 6rem">
+            ¡Participa en el <br>
+            5to plan de acción!
           </h1>
-        </div>
-        <div class="col-12 col-lg-6 text-center">
-          <img
-            src="{% static 'img/slider/manitas.png' %}"
-            alt="Gobierno Abierto, ciudadanía!">
         </div>
       </div>
     </div>
@@ -34,6 +29,8 @@
           >
             Tenemos {{total_proposals}} propuestas ciudadanas
           </h1>
+
+          {% include 'popular_proposal/_filter_tag_form.html' %}
 
           {% url 'popular_proposals:propose_wizard_full_without_area' as create_proposal_url %}
           <div class="text-center">
@@ -69,17 +66,7 @@
     {% organization_logos %}
   {% endcache %}
 
-  <section class="container padding-section">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1>
-          Organizaciones presentes
-        </h1>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id="you-org" class="grey-one">
+  <section id="you-org" class="grey-one">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -96,5 +83,5 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 {% endblock everything %}

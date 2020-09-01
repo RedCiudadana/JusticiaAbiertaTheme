@@ -5,33 +5,28 @@
 {% load staticfiles %}
 
 <div class="container">
-	<div>
-	  <h1>{% trans "¿Qué es Gobierno Abierto?" %}</h1>
-	</div>
+    <div>
+      <h1>{% trans "¿Qué es Gobierno Abierto?" %}</h1>
+    </div>
 </div>
 <section id="que-es">
   <div class="container">
-		<div class="col-md-6">
-			{% url 'encuentro_ciudadano' as encuentro_ciudadano_url %}
+        <div class="col-md-6">
+            {% url 'encuentro_ciudadano' as encuentro_ciudadano_url %}
 
-		<p>{% blocktrans %}
-			<p>
-			<strong>Gobierno Abierto</strong> es un plataforma desarrollada por <b><a href="https://ciudadaniai.org/" target="_blank" onclick="ga('send','event','que-es-ciudadanoi','click')">Fundación Ciudadanía Inteligente de Chile</a> y <a href="//www.redciudadana.org/" target="_blank" onclick="ga('send','event','que-es-redciudadana','click')">Red Ciudadana de Guatemala </a></b> que busca cambiar la forma en que se viven las elecciones en Guatemala para que esta vez sean los ciudadanos y ciudadanas los que hagan sus propuestas a las candidaturas.
-			</p>
-			<p>En la plataforma cualquier persona, organización, colectivo o grupo de personas pueden generar sus propias propuestas que aborden los temas que más les preocupan o inquietan. Desde Ciudadano Inteligente le haremos llegar las propuestas que se levanten a todas las candidaturas presidenciales y legislativas y éstas se podrán comprometer en la misma plataforma a llevarlas a cabo y cumplirlas en caso de resultar electas.</p>
-			<p>Una vez subidas en la página, cualquier persona puede conocer y apoyar las propuestas a través de un “APOYAR <i class="fa fa-heart" aria-hidden="true"></i>”. Además, las organizaciones no gubernamentales que participen de la plataforma pueden patrocinar propuestas de otras personas u organizaciones.</p>
-			<p>Desde Gobierno Abierto promovemos que las propuestas sean construidas colectivamente. Para eso, Fundación Ciudadanía Inteligente ha creado una Metodología de Encuentro para que la creación de nuestras propuestas sea un espacio de convivencia y diálogo entre personas, amigos, vecinos y comunidades. Juntas de vecinos, clubes deportivos, sindicatos, gremios, colectivos y organizaciones de todo tipo están invitados a hacer sus propuestas y a organizar encuentros para debatir en conjunto acerca del país que la ciudadanía sueña. (Acá puedes encontrar información de cómo hacer tu propio encuentro).</p>
-			<p>Las elecciones son el momento en que se define el futuro de nuestro país y es fundamental que toda la ciudadanía tenga un voz y opinión en este proceso. El voto no es la única forma de participar, desde Gobierno Abierto puedes ir más allá creando tu propuesta, compartirla con tus amistades y apoyar las que más te gusten para que juntos hagamos sentir, más fuerte que nunca, la voz de la ciudadanía en estas elecciones que son nuestras. <strong>¡porque es #Gobierno Abierto!</strong> </p>
-		{% endblocktrans %}</p>
-		</div>
-		<div class="col-md-6">
-				<div class="line-space"></div>
-				<div class="line-space"></div>
-				<img src="{% static 'img/que-es.png' %}" class="img-responsive">
-		</div>
+        <p>{% blocktrans %}
+            <p>
+            <strong>Gobierno Abierto</strong> es un plataforma desarrollada por <b><a href="https://ciudadaniai.org/" target="_blank" onclick="ga('send','event','que-es-ciudadanoi','click')">Fundación Ciudadanía Inteligente de Chile</a> y <a href="//www.redciudadana.org/" target="_blank" onclick="ga('send','event','que-es-redciudadana','click')">Red Ciudadana de Guatemala </a></b> que busca cambiar la forma en que se viven las elecciones en Guatemala para que esta vez sean los ciudadanos y ciudadanas los que hagan sus propuestas a las candidaturas.
+            </p>
+            <p>En la plataforma cualquier persona, organización, colectivo o grupo de personas pueden generar sus propias propuestas que aborden los temas que más les preocupan o inquietan. Desde Ciudadano Inteligente le haremos llegar las propuestas que se levanten a todas las candidaturas presidenciales y legislativas y éstas se podrán comprometer en la misma plataforma a llevarlas a cabo y cumplirlas en caso de resultar electas.</p>
+            <p>Una vez subidas en la página, cualquier persona puede conocer y apoyar las propuestas a través de un “APOYAR <i class="fa fa-heart" aria-hidden="true"></i>”. Además, las organizaciones no gubernamentales que participen de la plataforma pueden patrocinar propuestas de otras personas u organizaciones.</p>
+            <p>Desde Gobierno Abierto promovemos que las propuestas sean construidas colectivamente. Para eso, Fundación Ciudadanía Inteligente ha creado una Metodología de Encuentro para que la creación de nuestras propuestas sea un espacio de convivencia y diálogo entre personas, amigos, vecinos y comunidades. Juntas de vecinos, clubes deportivos, sindicatos, gremios, colectivos y organizaciones de todo tipo están invitados a hacer sus propuestas y a organizar encuentros para debatir en conjunto acerca del país que la ciudadanía sueña. (Acá puedes encontrar información de cómo hacer tu propio encuentro).</p>
+            <p>Las elecciones son el momento en que se define el futuro de nuestro país y es fundamental que toda la ciudadanía tenga un voz y opinión en este proceso. El voto no es la única forma de participar, desde Gobierno Abierto puedes ir más allá creando tu propuesta, compartirla con tus amistades y apoyar las que más te gusten para que juntos hagamos sentir, más fuerte que nunca, la voz de la ciudadanía en estas elecciones que son nuestras. <strong>¡porque es #Gobierno Abierto!</strong> </p>
+        {% endblocktrans %}</p>
+        </div>
   </div>
-	<div class="line-space"></div>
-	<div class="line-space"></div>
+    <div class="line-space"></div>
+    <div class="line-space"></div>
 </section>
 
 
