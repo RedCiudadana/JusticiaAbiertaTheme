@@ -1,6 +1,7 @@
 // Gobierno Abierto 2019
 @import "colors";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .btn-success {
     background-color: $success;
@@ -28,6 +29,7 @@ body {
 #proposalFilterForm {
     .control-label {
         color: white !important;
+        margin-bottom: 1rem;
     }
 }
 
@@ -110,9 +112,9 @@ label.control-label {
 }
 
 .navbar-brand {
-    padding: 3px;
+    padding: 10px;
     img {
-        height: 60px;
+        height: 55px;
         margin-left: 0;
     }
 }
@@ -202,7 +204,7 @@ body {
 
 .fa.fa-twitter.fa-stack-1x.fa-inverse,
 .fa.fa-facebook.fa-stack-1x.fa-inverse {
-    color: #eb665f !important;
+    color: #2C3447 !important;
 }
 
 textarea::placeholder,
@@ -213,7 +215,8 @@ input[type="text"]::placeholder {
 .navbar-inverse .navbar-nav > li > a {
     color: #ffffff;
     border: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     text-transform: none;
 }
@@ -419,4 +422,8 @@ $lg: 1200px;
 
 .dark {
     background-color: $dark;
+}
+
+.btn {
+    font-weight: 500 !important;
 }
