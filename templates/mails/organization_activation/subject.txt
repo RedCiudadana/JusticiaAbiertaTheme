@@ -1,1 +1,1 @@
-{% load i18n %}{% trans "Activación de tu cuenta en gobiernoabierto.gt" %}
+{% load i18n %}{% trans "Activación de tu cuenta en propuestas.gobiernoabierto.gt" %}

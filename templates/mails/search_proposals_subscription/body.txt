@@ -2,10 +2,10 @@
 
 Este mail es para contarte que hay nuevas propuestas en Gobierno Abierto:
 {% for proposal in proposals %}
-* {{proposal.title}} hecha por {{proposal.proposer.get_full_name}} (https://gobiernoabierto.gt{{proposal.get_absolute_url}}){% endfor %}
+* {{proposal.title}} hecha por {{proposal.proposer.get_full_name}} (https://propuestas.gobiernoabierto.gt{{proposal.get_absolute_url}}){% endfor %}
 
 Puedes revisar tus suscripciones a búsquedas en el siguiente link:
-https://gobiernoabierto.gt{% url 'proposal_subscriptions:list' %}
+https://propuestas.gobiernoabierto.gt{% url 'proposal_subscriptions:list' %}
 
 Saludos
 {% mail_signature_txt %}

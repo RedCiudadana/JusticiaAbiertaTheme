@@ -3,11 +3,11 @@ Escribimos para contarte que {{commitment.candidate.name}} {% if candidate.elect
 
 {% if commitment.candidate.election %}
 Puedes revisar sus razones para rechazar tu propuesta ciudadana acá:
-https://gobiernoabierto.gt{{commitment.get_absolute_url}}
+https://propuestas.gobiernoabierto.gt{{commitment.get_absolute_url}}
 {% endif %}
 
 Te estimamos mucho y por lo mismo te queremos pedir que no te desanimes y que nos ayudes a seguir cambiando Guatemala.
 Puedes seguir impulsando tu propuesta, para lo cual te puedes apoyar en las Herramientas de Activismo:
 
-https://gobiernoabierto.gt/static/material-ciudadano/manual-herramientas-activismo.pdf
+https://propuestas.gobiernoabierto.gt/static/material-ciudadano/manual-herramientas-activismo.pdf
 {% mail_signature_txt %}
