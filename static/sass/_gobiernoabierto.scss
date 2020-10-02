@@ -365,6 +365,11 @@ select.form-control,
     width: 100%;
     background-color: $grey-one;
 
+    .container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
     // TODO: Alinear verticalmente
     h1 {
         text-align: center;
