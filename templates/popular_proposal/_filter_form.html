@@ -13,6 +13,9 @@
       <div class="col-md-3">{% bootstrap_field form.text %}</div>
       <div class="col-md-3">{% bootstrap_field form.clasification %}</div>
       <div class="col-md-3">{% bootstrap_field form.area %}</div>
+      {% if form.estado %}
+        <div class="col-md-3">{% bootstrap_field form.estado %}</div>
+      {% endif %}
       <div class="col-md-3">{% bootstrap_field form.order_by %}</div>
     </div>
     <div class="row">
@@ -31,10 +34,13 @@
     </form>
     <form id="proposalFilterForm" action="{{ request.path }}" method="GET" role="form" class="hidden-xs hidden-sm">
     <div class="row">
-      <div class="col-md-4">{% bootstrap_field form.text %}</div>
+      <div class="col-md-3">{% bootstrap_field form.text %}</div>
       {% bootstrap_field form.clasification %}
-      <div class="col-md-4">{% bootstrap_field form.area %}</div>
-      <div class="col-md-4">{% bootstrap_field form.order_by %}</div>
+      <div class="col-md-3">{% bootstrap_field form.area %}</div>
+      {% if form.estado %}
+        <div class="col-md-3">{% bootstrap_field form.estado %}</div>
+      {% endif %}
+      <div class="col-md-3">{% bootstrap_field form.order_by %}</div>
     </div>
     <div class="row">
       <div class="col-md-12 text-right visible-md-*">
