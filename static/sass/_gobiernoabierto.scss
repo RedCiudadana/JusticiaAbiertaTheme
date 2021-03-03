@@ -223,7 +223,7 @@ input[type="text"]::placeholder {
 
 html .navbar_visible,
 body .navbar_visible {
-    padding-top: 70px;
+    padding-top: 120px;
 }
 
 select.form-control,
@@ -363,7 +363,9 @@ select.form-control,
 
 #homepageslider {
     width: 100%;
-    background-color: $grey-one;
+    background-image: url("/static/img/slider/02.png");
+    background-size: cover;
+    background-position: center bottom;
 
     .container {
         padding-top: 6rem;
