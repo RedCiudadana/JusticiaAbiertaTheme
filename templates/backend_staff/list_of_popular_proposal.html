@@ -1,0 +1,41 @@
+{% extends "backend_base.html" %}
+{% load staticfiles %}
+{% load votainteligente_extras %}
+{% load i18n %}
+{% load thumbnail %}
+{% load bootstrap3 %}
+
+{% block content %}
+<h5 class="page-header">Listado de de propuestas.</h5>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Titulo</th>
+                <th>Eje</th>
+                <th>Estado</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for proposal in proposals.all %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{proposal.title}}</td>
+                <td>{{proposal.clasification}}</td>
+                <td>{{proposal.estado}}</td>
+                <td>{{proposal.data.solution_at_the_end|linebreaksbr|truncatechars:150}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'backend_staff:list_of_popular_proposal' %}" target="_blank">
+        Descargar propuestas
+    </a>
+</div>
+
+{% endblock content %}
+
+{% block extrafooter %}
+{% endblock extrafooter %}

@@ -279,7 +279,8 @@ select.form-control,
 #homepageslider {
   width: 100%;
   background-image: url("/static/img/slider/02.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center bottom; }
   #homepageslider .container {
     padding-top: 6rem;
     padding-bottom: 6rem; }

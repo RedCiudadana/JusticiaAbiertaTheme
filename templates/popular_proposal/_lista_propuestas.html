@@ -81,4 +81,7 @@ $('[data-toggle="tooltip"]').tooltip();
     </div>
   </div>
   <!-- Fin _lista_propuestas -->
+  {% if not hidden_bars %}
+    <img src="{% static 'img/slider/barras.png' %}" class="img-responsive w-100" alt="Barras de colores">
+  {% endif %}
 </div>
