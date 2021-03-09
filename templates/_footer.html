@@ -8,7 +8,15 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12 un-proyecto-de">
                 <span class="small">{% trans "Un proyecto de" %}</span>
-                <div class="logos">
+                <div class="logos" style="display: flex;">
+                    <a class="logo-red">
+                        <img
+                            src="{% static 'img/LOGOTIPO_GA_02.png' %}"
+                            class="img-responsive"
+                            title="Gobierno Abierto"
+                            alt="Gobierno Abierto"
+                        />
+                    </a>
                     <a href="http://redciudadana.org" target="_blank" class="logo-red">
                         <img src="{% static 'img/logo-rc-color.png' %}{% block navbar_logo %}{% endblock navbar_logo %}" class="img-responsive" title="Red Ciudadana" alt="Logo de Red Ciudadana">
                     </a>

@@ -28,7 +28,6 @@
           </h2>
           <div>
             {% if popular_proposal.created_proposal %}
-                {% include 'popular_proposal/wizard/manual-herramientas-activismo_link.html' %}
               <p class="text-center"><b>{% trans "Difunde tu propuesta para conseguir más apoyos" %}</b></p>
               {% include 'popular_proposal/_share.html' with popular_proposal=popular_proposal.created_proposal btn_extra_class="btn btn-info btn-block" show_texts=True %}
 
