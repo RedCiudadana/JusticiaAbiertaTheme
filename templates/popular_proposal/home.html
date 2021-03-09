@@ -7,12 +7,16 @@
 {% block title %}- {% trans "Propuestas Ciudadanas" %}{% endblock title %}
 {% block everything %}
 <div class="container">
-    <div>
-      <h1 class="text-center">{% trans "Propuestas Ciudadanas" %}</h1>
+  <div>
+    <h1 class="text-center">{% trans "Propuestas Ciudadanas" %}</h1>
   </div>
 </div>
 <div>
+  {% if clasification %}
     {% include 'popular_proposal/_lista_propuestas.html' with popular_proposals=popular_proposals form=form is_embedded=is_embedded original_template=True clasification=clasification %}
+  {% else %}
+    {% include 'popular_proposal/_lista_propuestas.html' with popular_proposals=popular_proposals form=form is_embedded=is_embedded original_template=True clasification=False %}
+  {% endif %}
 </div>
 
 
