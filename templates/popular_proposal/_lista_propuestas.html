@@ -23,9 +23,11 @@ $('[data-toggle="tooltip"]').tooltip();
       {% trans "Te invitamos a filtrar y encontrar propuestas ciudadanas en las siguientes áreas" %}
     </p>
     {% include 'popular_proposal/_filter_tag_form.html' %}
-    <p class="bajada text-center padding-section">
-      {% trans clasification_description %}
-    </p>
+    {% if clasification_description %}
+      <p class="bajada text-center padding-section">
+        {% trans clasification_description %}
+      </p>
+    {% endif %}
     <div class="dark">
         {% include 'popular_proposal/_filter_form.html' %}
     </div>
