@@ -60,24 +60,6 @@
               </a>
             </li>
           {%endif%}
-          <li>
-            <a
-              class="share-btn share-btn-branded share-btn-facebook {{btn_extra_class}}"
-              target="_blank"
-              onclick="ga('send', 'event', 'image-download', 'click');"
-              href="{{popular_proposal.ogp_image}}"
-              title='{% trans "Descarga la imagen de esta propuesta" %}'
-            >
-              {% if show_texts %}
-                <i class="fa fa-instagram"></i> Instagram
-              {% else %}
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-              {% endif %}
-            </a>
-          </li>
           {% with proposal.get_absolute_url as detail_url %}
             {% if request.path == detail_url %}
               <li>
