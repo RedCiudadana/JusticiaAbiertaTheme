@@ -20,7 +20,7 @@
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane{% if not organizacion and not username_and_password %} active{% endif %}" id="userRegister">
 							<div class="form-group">
-								{% include '_social_login_buttons.html' with url=next %}
+								{# {% include '_social_login_buttons.html' with url=next %} #}
 							</div>
 							<h3 class="text-center">{% trans 'O regístrate con un usuario y contraseña' %}</h3>
 							{% user_register %}
