@@ -20,11 +20,17 @@ $('[data-toggle="tooltip"]').tooltip();
 </script>
 {% if not hidden_search %}
     <p class="bajada text-center">
-      {% trans "Te invitamos a filtrar y encontrar propuestas ciudadanas en las siguientes áreas" %}
+      Te invitamos a filtrar y encontrar propuestas en las áreas temáticas <br>
+      sobre las cuales se co crearán compromisos e hitos tomando como base <br>
+      al Eje validado <strong>Transparencia en la Gestión Pública y Presupuesto del Estado</strong>
     </p>
     {% include 'popular_proposal/_filter_tag_form.html' %}
     {% if clasification_description %}
-      <p class="bajada text-center padding-section">
+      <p class="bajada text-center padding-section" style="max-width: 600px; margin: auto;font-size: 10px; padding-top: 10px;">
+        <strong>
+          {% trans clasification_title %}
+        </strong>
+        <br>
         {% trans clasification_description %}
       </p>
     {% endif %}

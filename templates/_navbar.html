@@ -9,7 +9,7 @@
     class="navbar navbar-inverse {% if fixed_nav_class %}{{fixed_nav_class}}{% else %}navbar-fixed-top{% endif %} {% block navbar_background %} red {% endblock navbar_background %}"
     id="navbar"
 >
-    <div class="container">
+    <div style="padding-left: 40px;padding-right: 40px;">
         <div class="navbar-header">
             <button
                 type="button"
@@ -21,18 +21,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a
-                class="navbar-brand"
-                href="/"
-                onclick="ga('send', 'event', 'nav-logo-vota', 'click')"
-            >
-                <img
-                    src="{% static 'img/LOGOTIPO_GA_02.png' %}{% block navbar_logo %}{% endblock navbar_logo %}"
-                    title="Gobierno Abierto"
-                    alt="Gobierno Abierto"
-                    height="40"
-                />
-            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/" style="padding-top: 20px;">
+                        <img src="{% static 'img/LOGOTIPO_GA_02.png' %}" title="Gobierno Abierto" alt="Gobierno Abierto"
+                            height="50" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/" style="padding-top: 20px;">
+                        <img src="{% static 'img/LogoGAE2020p.png' %}" title="Gobierno Abierto" alt="Gobierno Abierto"
+                            height="40" />
+                    </a>
+                </li>
+            </ul>
         </div>
         {% block navbar %} {% block extra_nav %} {% endblock extra_nav %}
         <style>
@@ -46,7 +48,7 @@
                     <a
                         href="{% url 'que_es' %}"
                         onclick="ga('send', 'event', 'nav-que-es', 'click')"
-                        >{% trans "Metodología" %}</a
+                        >{% trans "Descripción y Metodología" %}</a
                     >
                 </li>
                 <li>
@@ -64,11 +66,14 @@
                     <a
                         href="#"
                         onclick="ga('send', 'event', 'nav-twitter-share', 'click'); window.open(&quot;//twitter.com/share?via=ComisionGAE&hashtags={{ config.WEBSITE_TWITTER_HASHTAG }}&text={{ config.WEBSITE_TWITTER_TEXT }}&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)"
+                        style="padding-top: 20px;"
                     >
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
+                        <img
+                            src="{% static 'img/redes-06.png' %}"
+                            title="Gobierno Abierto"
+                            alt="Gobierno Abierto"
+                            height="35"
+                        />
                     </a>
                 </li>
                 <li>
@@ -78,13 +83,14 @@
                         href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpropuestas.gobiernoabierto.gt"
                         title="{{ config.WEBSITE_METADATA_DESCRIPTION }}"
                         target="_blank"
+                        style="padding-top: 20px;"
                     >
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i
-                                class="fa fa-facebook fa-stack-1x fa-inverse"
-                            ></i>
-                        </span>
+                        <img
+                            src="{% static 'img/redes-07.png' %}"
+                            title="Gobierno Abierto"
+                            alt="Gobierno Abierto"
+                            height="35"
+                        />
                     </a>
                 </li>
             </ul>
