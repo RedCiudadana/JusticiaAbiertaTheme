@@ -7,7 +7,7 @@
 {% load votainteligente_extras %}
 <head>
     <meta charset="utf-8">
-    <title>Gobierno Abierto {% block title %}{{ config.WEBSITE_GENERAL_SETTINGS_HOME_TITLE }}{% endblock title %}</title>
+    <title>{% block title %}{{ config.WEBSITE_GENERAL_SETTINGS_HOME_TITLE }}{% endblock title %}</title>
     <meta name="author" content="{{ config.WEBSITE_METADATA_AUTHOR }}">
     <meta name="description" content="{% block description %}{{ config.WEBSITE_METADATA_DESCRIPTION }}{% endblock description %}">
     <meta name="keywords" content="{% block extrakeywords %}{% endblock extrakeywords %}{{ config.WEBSITE_METADATA_KEYWORD }}{% block keywords %}{% endblock keywords %}">
@@ -32,7 +32,7 @@
     {% endblock ogp %}
     <meta property="fb:app_id" content="{{ config.WEBSITE_OGP_APP_ID }}">
     <!--eoff-->
-    <link rel="shortcut icon" sizes="88x153" href="{% static 'img/votai-196.png' %}">
+    <link rel="shortcut icon" sizes="64x64" href="{% static 'img/favicon.ico' %}">
     <!-- Browser out of date -->
     <script>
     var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},api:4};
