@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/" style="padding-top: 20px;">
+                    <a href="/" style="padding-top: 20px;" id="logo-gobierno-abierto">
                         <img src="{% static 'img/LogoGAE2020p.png' %}" title="Gobierno Abierto" alt="Gobierno Abierto"
                             height="40" />
                     </a>
@@ -40,6 +40,16 @@
         <style>
             .navbar-nav li a {
                 text-align: center !important;
+            }
+
+            @media (max-width: 480px) {
+                #logo-gobierno-abierto {
+                    display: none;
+                }
+
+                .navbar-nav {
+                    float: unset !important;
+                }
             }
         </style>
         <div class="collapse navbar-collapse" style="margin-top: 20px;">
